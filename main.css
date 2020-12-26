@@ -1,0 +1,387 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+
+
+body
+{
+	max-width: 1920px;
+	color: #209781;
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background: linear-gradient(to bottom right, #ffffcc -20%, #3366ff 151%);
+
+	
+
+
+}
+
+
+#first {
+	margin : 0;
+	height: 130vh;
+	width: 100vw;
+	background: url('first_p.png'); 
+	background-repeat: no-repeat;
+	background-position: right top;
+	overflow: visible;
+}
+
+p { 
+	width: 300px;
+	padding: 19px; }
+
+#I-am {
+	width: 700px;
+	color: black;
+	padding: 150px;
+	font-size: 50px;
+	font-family: Roboto;
+}
+
+ @keyframes rotate { /* poruszanie elementu o ilość stopni. od 0 do 360stopni */
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+  #comp {
+
+  	position: relative;
+  	animation: rotate 120s 0s infinite linear forwards;
+  	top: -35vh;
+  	left: 63vh;
+
+  }
+
+
+#design {
+	padding: 10px;
+	width: 300px;
+	height : 500px;
+	font-size: 18px;
+ }
+
+#second {
+	text-align : left;
+	margin : 40px;
+
+}
+
+#contact:hover, #about:hover, #next:hover, #back:hover {
+		color: #E9B64A;
+		font-size: 33px;
+		transition: font-size 1s;}
+
+.about p{
+	position: relative;
+	left:460px;
+	top: 100px;
+	padding: 60px;
+	width: 1200px;
+	font-size: 30px;
+	font-family: Roboto;
+	color: black;
+}
+
+#third {
+	margin : 0;
+	height: 100vh;
+	width: 100vw;
+	background: url('about-mee.png');
+	background-repeat: no-repeat;
+	background-position: left; 
+}
+
+.pusto {
+	height: 150px;
+}
+
+
+@keyframes blink { 0% {
+    visibility: hidden;
+    animation-timing-function: step-end;
+  }
+  25%, 100% {
+    visibility: visible;
+  }
+}
+
+.robo {
+	width: 200px;
+	height: 250px;
+	background: url("up3.png") no-repeat;
+	background-position: right bottom;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	display: none;
+	z-index: 1;
+	
+
+}
+
+.scrollup {
+	width: 200px;
+	height: 250px;
+	background: url("up2.png") no-repeat;
+	background-position: right bottom;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	opacity: 70%;
+	animation: blink 4s infinite;
+	display: none;
+	z-index: 1;
+}
+
+
+.contact-form {
+	width: 100%;
+	text-align: center;
+}
+
+
+#pusto1 {
+	height: 600px;
+	background: url("email.png") no-repeat;
+	background-position: right;
+}
+
+#cont {
+	width: 60%;
+	height: 40px;
+
+}
+
+.form-control {
+	width: 30%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid blue;
+	color: black;
+	font-size: 18px;
+	margin-bottom: 16px;
+	text-align: center;
+
+}
+
+
+      @keyframes send
+      {
+      	0% {transform:translate(-1500px, -700px) ;}
+      	
+      }
+
+ @keyframes send2
+      {
+      	0% {transform:translate(-100px, -700px) ;}
+      	
+      }
+
+  #email-img {
+        animation: send 7s infinite alternate;
+
+      }
+
+
+
+
+ #pusto3 {
+ width: 400px;
+ }
+    #email-send {
+     	position: relative;
+     	left: 50%;
+     	text-align: center;
+     	animation: send 4s infinite alternate;
+
+     }
+ 
+
+
+#back {
+	margin-left: 120px;
+	font-size: 40px;
+	text-decoration: none;
+	color: #209781;
+ 	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+   #first {
+   	margin: -20;
+   	padding: 0;
+	width: 100%;
+	background-size: 500px;
+	
+}
+
+
+#I-am {
+	width: 500px;
+	padding-top: 30px;
+	padding-left: 25px;
+	font-size: 24px;
+}
+
+#design {
+	height : 200px;
+	font-size: 12px;
+ }
+.about p{
+	left:450px;
+	top: 100px;
+	width: 600px;
+	font-size: 18px;
+}
+
+#cont {
+	width: 60%;
+	height: 40px;
+	text-align: right;
+
+}
+
+ #comp {
+  	scale: 0.5;
+  	left: 10vh;
+  }
+
+.scrollup {
+	scale:0.6; 
+	right: -5px;
+	bottom: -5px;
+}
+
+.robo {
+	scale:0.6;
+	right: -5px;
+	bottom: -5px;
+}
+
+}
+
+
+
+@media (max-height : 700px) {
+   #first {
+   	margin: -20;
+   	padding: 0;
+	height: 800px;
+	background-size: 900px;
+	
+}
+
+#third {
+	background-size: 200px;
+	height: 650px;
+ }
+
+
+
+#I-am {
+	width: 500px;
+	padding-top: 30px;
+	padding-left: 25px;
+	font-size: 24px;
+}
+
+#design {
+	height : 200px;
+	font-size: 12px;
+ }
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 381px) and (max-width: 1024px) {
+   #first {
+   	margin: -20;
+   	padding: 0;
+	width: 100%;
+	background-size: 500px;
+	
+}
+
+#third {
+
+	background-size: 200px;
+	background-position: center; }
+
+#I-am {
+	width: 200px;
+	padding-top: 30px;
+	padding-left: 25px;
+	font-size: 24px;
+}
+
+#design {
+	height : 200px;
+	font-size: 12px;
+ }
+.about p{
+	left:-10px;
+	top: 400px;
+	width: 400px;
+	font-size: 18px;
+}
+
+#cont {
+	width: 20%;
+	height: 20px;
+	text-align: right;
+
+}
+
+ #comp {
+  	scale: 0.5;
+  	left: 10vh;
+  }
+
+.scrollup {
+	scale:0.6; 
+	right: -5px;
+	bottom: -5px;
+}
+
+.robo {
+	scale:0.6;
+	right: -5px;
+	bottom: -5px;
+}
+
+}

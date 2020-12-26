@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Grzegorz Karasek</title>
+	<meta name="description" content="Prezentacja strony www">
+	<meta name="keywords" content="Grzegorz Karasek, IT, strony internetowe na zlecenie">
+	<meta name="author" content="G.K.">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+
+	<script>
+
+	jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#about').click(function() { $.scrollTo($('#about2'), 900); });
+	
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+			$('.robo').click(function() { $.scrollTo($('body'), 1000); });
+			$('#contact').click(function() { $.scrollTo($('#cont'), 900); });
+		}
+		);
+
+	//pokaz przycisk robota
+	$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn() && $('.robo').fadeIn();
+			else $('.scrollup').fadeOut() && $('.robo').fadeOut();		
+		}
+		);
+
+	
+</script>
+</head>
+<body>
+	<div class="container">
+	<div id="first">
+		<p class="robo"></p>
+		<p class="scrollup"></p>
+
+	<div id="design">
+		<p>Design by - Grzegorz Karasek</p>
+		<p id="I-am">Hi! I am George. <br> I am passionate about IT...</p>
+
+	</div>
+	<div id="second">
+		<p id="contact">contact</p>
+		<p id="about">about me</p>
+		<img id="comp" src="comp.png" alt="">
+	</div>
+	</div>
+	<div id="third" class="about">
+
+		<p id="about2">About me &#128521</p>
+		<p id="about3">
+Hi! My name is George.<br>
+I am currently a IT student of WSB University in Dąbrowa Górnicza (Poland).<br>
+In particular, I am interested in IT security. 
+I also gained valuable experience working as an IT specialist. I was responsible for system administration and employee control in terms of IT security. 
+I also provided assistance when needed. 
+Sometimes there was a hardware failure so I had to fix it.<br> After work, I try to gain experience in programming and software, so I spend a lot of time browsing tutorials on youtube.In the meantime, I also take care of my condition. I love going to the gym and cycling. On sunny days, I like to drive my convertible.</p>
+	</div>
+	<div class="pusto"></div>
+
+		
+	<div class="contact-form">
+		<p id="pusto1"></p>
+		<p id="cont">Contact : </p>
+
+		<form id="contact-form" method="post" action="mail.php">
+			<img id="email-img" src="emai.png" alt=""><br>
+			<input name="name" type="text" class="form-control" placeholder="Your name" required><br>
+			<input name="company" type="text" class="form-control" placeholder="Company" required><br>
+			<input name="email" type="email" class="form-control" placeholder="Your e-mail" required><br>
+			<textarea name="message" class="form-control" placeholder="Message" row="8" required></textarea><br>
+			<input type="submit" class="form-control" value="SEND MESSAGE"> <br>
+			
+
+		</form>
+	</div>
+	<div class="pusto"></div>
+	</div>
+
+
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="memory.js"></script>
+</body>
+</html>
