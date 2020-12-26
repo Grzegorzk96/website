@@ -341,24 +341,24 @@ p {
 #third {
 
 	background-size: 200px;
-	background-position: center; }
+	background-position: right; }
 
 #I-am {
 	width: 200px;
 	padding-top: 30px;
 	padding-left: 25px;
-	font-size: 24px;
+	font-size: 30px;
 }
 
 #design {
 	height : 200px;
-	font-size: 12px;
+	font-size: 16px;
  }
 .about p{
 	left:-10px;
 	top: 400px;
 	width: 400px;
-	font-size: 18px;
+	font-size: 25px;
 }
 
 #cont {
